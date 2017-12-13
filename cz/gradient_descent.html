@@ -39,7 +39,7 @@
         </div>
         <div class="col-8">
           <h1 class="text-center m-5">Gradient descent</h1>
-          <p>
+          <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
             Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Suspendisse sagittis ultrices augue.
@@ -59,8 +59,48 @@
             pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Suspendisse nisl.
             Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim.
           </p>
-
+          <div class="row">
+            <div class="col-6 text-center">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h3 class="card-title mb-4">Stable</h3>
+                  <div id="stable" class="plotly-graph-div"></div>
+                  <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button id="compute" class="btn">Compute</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <div class="card text-white bg-dark">
+                <div class="card-body">
+                  <h3 class="card-title mb-4">Unstable</h3>
+                  <div id="unstable" class="plotly-graph-div"></div>
+                  <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button id="compute2" class="btn">Compute</button>
+                </div>
+              </div>
+            </div>
         </div>
+        <p class="my-4">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean fermentum risus id tortor.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+          Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Suspendisse sagittis ultrices augue.
+          Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nam libero tempore, cum soluta
+          nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+          voluptas assumenda est, omnis dolor repellendus. Etiam dui sem, fermentum vitae, sagittis id, malesuada
+          in, quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam erat volutpat. Maecenas libero.
+
+          Phasellus et lorem id felis nonummy placerat. Aliquam ornare wisi eu metus. Fusce aliquam vestibulum ipsum.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In
+          enim a arcu imperdiet malesuada. Nam sed tellus id magna elementum tincidunt. Etiam bibendum elit eget erat.
+          Pellentesque arcu. Etiam egestas wisi a erat. Aenean fermentum risus id tortor. Etiam dui sem, fermentum vitae,
+          sagittis id, malesuada in, quam. Sed convallis magna eu sem. Fusce wisi. Nullam feugiat, turpis at pulvinar
+          vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Sed vel lectus. Donec odio
+          tempus molestie, porttitor ut, iaculis quis, sem. Duis viverra diam non justo. Maecenas fermentum, sem in
+          pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Suspendisse nisl.
+          Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim.
+        </p>
       </div>
     </div>
 
@@ -69,5 +109,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.17.0/math.min.js"></script>
+    <script src="gradient_descent_demo.js"></script>
   </body>
 </html>
