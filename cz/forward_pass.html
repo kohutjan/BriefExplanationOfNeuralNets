@@ -39,18 +39,71 @@
         </div>
         <div class="col-8">
           <h1 class="text-center m-5">Dopředný průchod</h1>
-          <p>
+          <p class="text-justify">
             Dopředná neuronová síť je v podstatě funkce, která na základě svého vstupu vypočítá svůj výstup. Vstup a výstup může být zcela
             libovolný, pokud jde reprezentovat číselně tzn. jde reprezentovat v počítači (obázek, zvuk, souřadnice, seznam hostů, barva,
             druh zvířete, prostě cokoliv...). Síť pak může například přiřadit vstupnímu obrázku tagy podle toho, co se na obrázku vyskytuje.
             Je ale také možné vytvořit síť, která dělá opak tzn. na základě zadaných tagů vygeneruje odpovídající obrázek. Je důležité si
             uvědomit, že jak vstupem tak výstupem sítě jsou pouhá čísla a vevnitř sítě se pouze vstupní čísla transformují na výstupní
             (nic víc, nic míň). Pokud vstupem bude obázek a výstupem tagy, pak obrázek může být reprezentován hodnotami jednotlivých kanálů
-            pixelů a tagy jako čísla, kde dané číslo bude představovat váhu příslušného tagu. Následující obrázek by měl objasnit případné
+            pixelů a tagy jako čísla, kde dané číslo bude představovat váhu příslušného tagu. Obrázek 1 by měl objasnit případné
             pochybnosti.
-
-            
           </p>
+          <div class="card text-white bg-dark">
+            <img class="card-img-top" src="../forward_pass_images/representation.png" alt="representation">
+            <div class="card-body">
+              <p class="card-text mt-3 text-justify">
+                Obrázek 1: Zelené šipky znázorňují převod obázku/tagů na číselnou reprezentaci, takto budou obrázky/tagy "vnímány" sítí.
+                Modré/červené šipky znázorňují možný směr transformace, síť na základě své vnitřní struktury a vstupu vygeneruje výstup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-2">
+        </div>
+        <div class="col-4">
+          <p class="text-justify">
+            Neuronová síť tedy provádí transformaci vstupních čísel na výstupní, jak to ale dělá? Základními prvky neuronové sítě jsou neurony.
+            Každý neuron může mít více vstupů a pouze jeden výstup. Každý neuron má váhy, na základě kterých vypočítá svůj výstup. Každý vstup
+            neuronu je násoben příslušnou vahou a všechny takto vzniklé hodnoty jsou sečteny což udává výstup neuronu viz. obrázek 2.
+          </p>
+        </div>
+        <div class="col-4">
+          <div class="card text-white bg-dark">
+            <img class="card-img-top" src="../forward_pass_images/neuron.png" alt="representation">
+            <div class="card-body">
+              <p class="card-text mt-3 text-justify">
+                Obrázek 2: Neuron má n vstupů x a vah w a jeden výstup y.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+          <p class="text-justify">
+            Dopředná neuronová síť je v podstatě funkce, která na základě svého vstupu vypočítá svůj výstup. Vstup a výstup může být zcela
+            libovolný, pokud jde reprezentovat číselně tzn. jde reprezentovat v počítači (obázek, zvuk, souřadnice, seznam hostů, barva,
+            druh zvířete, prostě cokoliv...). Síť pak může například přiřadit vstupnímu obrázku tagy podle toho, co se na obrázku vyskytuje.
+            Je ale také možné vytvořit síť, která dělá opak tzn. na základě zadaných tagů vygeneruje odpovídající obrázek. Je důležité si
+            uvědomit, že jak vstupem tak výstupem sítě jsou pouhá čísla a vevnitř sítě se pouze vstupní čísla transformují na výstupní
+            (nic víc, nic míň). Pokud vstupem bude obázek a výstupem tagy, pak obrázek může být reprezentován hodnotami jednotlivých kanálů
+            pixelů a tagy jako čísla, kde dané číslo bude představovat váhu příslušného tagu. Obrázek 1 by měl objasnit případné
+            pochybnosti.
+          </p>
+          <div class="card text-white bg-dark">
+            <img class="card-img-top" src="../forward_pass_images/forward_pass.png" alt="representation">
+            <div class="card-body">
+              <p class="card-text mt-3 text-justify">
+                Obrázek 3: Zelené šipky znázorňují převod obázku/tagů na číselnou reprezentaci, takto budou obrázky/tagy "vnímány" sítí.
+                Modré/červené šipky znázorňují možný směr transformace, síť na základě své vnitřní struktury a vstupu vygeneruje výstup.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
