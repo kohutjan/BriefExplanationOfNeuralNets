@@ -67,7 +67,18 @@
           <p class="text-justify">
             Neuronová síť tedy provádí transformaci vstupních čísel na výstupní, jak to ale dělá? Základními prvky neuronové sítě jsou neurony.
             Každý neuron může mít více vstupů a pouze jeden výstup. Každý neuron má váhy, na základě kterých vypočítá svůj výstup. Každý vstup
-            neuronu je násoben příslušnou vahou a všechny takto vzniklé hodnoty jsou sečteny což udává výstup neuronu viz. obrázek 2.
+            neuronu je násoben příslušnou vahou a všechny takto vzniklé hodnoty jsou sečteny což udává výstup neuronu viz. obrázek 2. Neuron
+            může mít také bias tzn. nějakou konstantu, která se přičítá k jeho výstupu. Dalšími prvky neuronové sítě jsou různé tzv. aktivační
+            funkce, tyto funkce upravují výstupní hodnotu neuronu typicky se používá sigmoida, hyperbolický tangens a ReLU. Použití biasu a
+            aktivační funkce není nutné, neuron nemusí mít bias ani aktivační funkci, nebo může mít jen jednu z těchto komponent viz. obrázek 3.
+          </p>
+          <p class="text-justify">
+            Neuronová síť tedy provádí transformaci vstupních čísel na výstupní, jak to ale dělá? Základními prvky neuronové sítě jsou neurony.
+            Každý neuron může mít více vstupů a pouze jeden výstup. Každý neuron má váhy, na základě kterých vypočítá svůj výstup. Každý vstup
+            neuronu je násoben příslušnou vahou a všechny takto vzniklé hodnoty jsou sečteny což udává výstup neuronu viz. obrázek 2. Neuron
+            může mít také bias tzn. nějakou konstantu, která se přičítá k jeho výstupu. Dalšími prvky neuronové sítě jsou různé tzv. aktivační
+            funkce, tyto funkce upravují výstupní hodnotu neuronu typicky se používá sigmoida, hyperbolický tangens a ReLU. Použití biasu a
+            aktivační funkce není nutné, neuron nemusí mít bias ani aktivační funkci, nebo může mít jen jednu z těchto komponent viz. obrázek 3.
           </p>
         </div>
         <div class="col-4">
@@ -79,9 +90,17 @@
               </p>
             </div>
           </div>
+          <div class="card text-white bg-dark my-4">
+            <img class="card-img-top" src="../forward_pass_images/biasrelu.png" alt="representation">
+            <div class="card-body">
+              <p class="card-text mt-3 text-justify">
+                Obrázek 3: Neuron má n vstupů x a vah w a jeden výstup y.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row my-4">
+      <div class="row">
         <div class="col-2">
         </div>
         <div class="col-8">
